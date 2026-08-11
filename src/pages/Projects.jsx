@@ -1,0 +1,46 @@
+import { projects } from "../data/content";
+import Tag from "../components/Tag";
+
+function ProjectCard({ project }) {
+  return (
+    <article className="rounded-lg border border-[var(--border)] bg-[var(--bg-raised)] p-6">
+      <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
+        <h2 className="text-lg font-medium text-[var(--text)]">
+          {project.repo ? (
+            <a href={project.repo} target="_blank" rel="noreferrer" className="hover:text-[var(--accent)]">
+              {project.name}
+            </a>
+          ) : (
+            project.name
+          )}
+        </h2>
+        {project.period && <span className="font-mono-tag text-xs text-[var(--text-dim)]">{project.period}</span>}
+      </div>
+      <div className="mb-3 flex flex-wrap gap-2">
+        {project.stack.map((tech) => (
+          <Tag key={tech}>{tech}</Tag>
+        ))}
+      </div>
+      <ul className="flex flex-col gap-1.5">
+        {project.bullets.map((bullet) => (
+          <li key={bullet} className="flex gap-2 text-sm leading-relaxed text-[var(--text-dim)]">
+            <span className="text-[var(--accent)]">-</span>
+            <span>{bullet}</span>
+          </li>
+        ))}
+      </ul>
+    </article>
+  );
+}
+
+export default function Projects() {
+  return (
+    <div className="flex flex-col gap-6">
+      <h1 className="text-2xl font-semibold text-[var(--text)]">Projects</h1>
+      {projects.map((project) => (
+        <ProjectCard key={project.name} project={project} />
+      ))}
+      <p className="font-mono-tag text-sm text-[var(--text-dim)]">More builds in progress. Check GitHub for the latest experiments.</p>
+    </div>
+  );
+}
