@@ -92,8 +92,18 @@ export const skillGroups = [
 
 export const projects = [
   {
+    name: "Agentic-Catalog",
+    repo: "https://github.com/devjuneja789/agentic-catalog",
+    stack: ["React", "TypeScript", "Express", "MongoDB", "Gemini", "Razorpay"],
+    bullets: [
+      "Developed an agentic e-commerce storefront where shoppers search products via natural language; integrated the Gemini API to power an AI buyer agent that autonomously selects items and drives the purchase path",
+      "Architected a secure checkout flow utilizing Razorpay Payment Links and webhooks, implementing atomic stock reservation to completely prevent overselling during concurrent API request",
+      " Built a full-stack dashboard featuring a chronological audit trail to ensure AI decision visibility, alongside configurable approval gates and fallback mechanisms like automated stock release on payment failure",
+    ],
+  },
+  {
     name: "RLM-Python Recursive Language Models",
-    repo: "https://github.com/devjuneja789",
+    repo: "https://github.com/devjuneja789/rlm-python",
     stack: ["Python", "Gemini API", "REPL Sandbox", "Async"],
     bullets: [
       "Built an independent Python implementation of Recursive Language Models, treating long context as external memory instead of stuffing it into every prompt.",
