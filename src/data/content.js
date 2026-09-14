@@ -8,9 +8,9 @@ export const profile = {
   phone: "+91-9911522188",
   resumeUrl: "https://drive.google.com/file/d/1QF8uPh__QVgt9ZE_uorkLX4LWYhfmNif/view?usp=sharing",
   bio: [
-    "I'm a Computer Science student specializing in AI & ML at VIT Bhopal, building applied AI systems and full-stack products.",
-    "My work spans RAG pipelines, transformer models, NLP systems, and production-ready apps backed by PyTorch, HuggingFace, Node.js, FastAPI, PostgreSQL/pgvector, and MongoDB.",
-    "I like turning model ideas into usable tools: from recursive long-context experiments to AI second-brain systems and miniature transformer LLMs trained from scratch.",
+    "I'm a Computer Science student specializing in AI & ML at VIT Bhopal, building applied AI systems end-to-end — from model training to production deployment.",
+    "My work spans fine-tuning & alignment (LoRA/DPO pipelines), RAG systems with evaluation and observability, agentic AI with memory and tool use, and long-context research. I build with PyTorch, HuggingFace (Transformers/TRL/PEFT), LangGraph, Node.js, FastAPI, PostgreSQL/pgvector, and MongoDB.",
+    "I like going below the API layer: training transformer LLMs from scratch, aligning models with preference optimization, building agents that learn from experience, and turning all of it into usable tools with rigorous evaluation."
   ],
   socials: [
     { label: "GitHub", url: "https://github.com/devjuneja789" },
