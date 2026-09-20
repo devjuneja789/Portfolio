@@ -123,7 +123,7 @@ export const projects = [
   },
   {
     name: "MiniLLM",
-    repo: "https://github.com/devjuneja789",
+    repo: "https://github.com/devjuneja789/MiniLLM",
     stack: ["Python", "PyTorch", "BPE Tokenizer", "Google Colab"],
     bullets: [
       "Built a miniature transformer LLM from scratch in PyTorch and trained it on Shakespeare text using a Google Colab T4 GPU.",
