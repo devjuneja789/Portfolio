@@ -1,16 +1,16 @@
 export const profile = {
   name: "Dev Juneja",
   shortName: "Dev",
-  tagline: "AI/ML & Full Stack Developer",
+  tagline: "AI/ML engineer in training and full-stack developer",
   availability: "Open to AI/ML, full-stack, and internship opportunities",
   location: "Faridabad, Haryana, India",
   email: "devjuneja789@gmail.com",
   phone: "+91-9911522188",
   resumeUrl: "https://drive.google.com/file/d/1QF8uPh__QVgt9ZE_uorkLX4LWYhfmNif/view?usp=sharing",
   bio: [
-    "I'm a Computer Science student specializing in AI & ML at VIT Bhopal, building applied AI systems end-to-end — from model training to production deployment.",
-    "My work spans fine-tuning & alignment (LoRA/DPO pipelines), RAG systems with evaluation and observability, agentic AI with memory and tool use, and long-context research. I build with PyTorch, HuggingFace (Transformers/TRL/PEFT), LangGraph, Node.js, FastAPI, PostgreSQL/pgvector, and MongoDB.",
-    "I like going below the API layer: training transformer LLMs from scratch, aligning models with preference optimization, building agents that learn from experience, and turning all of it into usable tools with rigorous evaluation."
+    "I'm a Computer Science student specializing in AI & ML at VIT Bhopal. I build full-stack applications and AI/ML projects, with a focus on RAG, fine-tuning, and transformer models.",
+    "My recent projects include LoopSmith, which turns coding-session traces into reviewed instructions for coding agents; RLM-Python, an exploration of working with long documents; and Agentic Catalog, a storefront where a Gemini-powered agent searches products and prepares checkout.",
+    "I'm also an AI Product Engineering Intern at FPA AI Solutions, where I work on internal AI products, model workflows, and automated evaluations. I have also helped improve website visibility through structured data and content updates."
   ],
   socials: [
     { label: "GitHub", url: "https://github.com/devjuneja789" },
@@ -117,22 +117,13 @@ export const skillGroups = [
 
 export const projects = [
   {
-    name: "Agentic Commerce",
-    repo: "https://github.com/devjuneja789/agentic-commerce",
-    demo: "https://agentic-commerce-1.onrender.com",
-    stack: [
-      "React",
-      "TypeScript",
-      "Express",
-      "MongoDB",
-      "PayPal Orders v2",
-      "MCP",
-      "Gemini 2.5 Flash",
-    ],
+    name: "LoopSmith",
+    repo: "https://github.com/devjuneja789/loopsmith",
+    stack: ["Python", "SQLite", "Typer", "pytest", "LLM evaluation"],
     bullets: [
-      "Developed an autonomous e-commerce storefront where shoppers query inventory in natural language; integrated Gemini 2.5 Flash to parse intent, rank catalog items, and drive safe purchasing with full audit telemetry.",
-      "Architected a resilient PayPal Orders v2 checkout pipeline featuring atomic MongoDB stock reservations to prevent overselling during concurrent traffic, complete with webhook reconciliation and post-redirect capture.",
-      "Engineered multi-tier spending guardrails with a Human-in-the-Loop review queue ($100 approval gate, $500 hard safety cap) and implemented an MCP (Model Context Protocol) server exposing safe checkout tools to external AI agents.",
+      "Built a Python CLI that imports coding-session traces and finds evidence-backed suggestions for reusable agent instructions.",
+      "Added static checks and optional model-based A/B evaluation; proposed changes require human approval before promotion.",
+      "Versioned approved instructions with rollback, and added exports for AGENTS.md, memory files, and agent skills.",
     ],
   },
   {
@@ -146,14 +137,14 @@ export const projects = [
     ],
   },
   {
-    name: "Brainly AI Second Brain",
-    repo: "https://github.com/devjuneja789/brainly",
-    demo: "https://brainly-1-pb79.onrender.com",
-    stack: ["MERN", "TypeScript", "Tailwind CSS", "JWT", "pgvector", "OpenAI"],
+    name: "Agentic Catalog (Studio Loom)",
+    repo: "https://github.com/devjuneja789/agentic-catalog",
+    demo: "https://agentic-catalog-1.onrender.com",
+    stack: ["React", "TypeScript", "Express", "MongoDB", "Gemini", "Razorpay", "MCP"],
     bullets: [
-      "Built a full-stack AI-powered knowledge base to save YouTube videos, tweets, and links — with semantic search via RAG (Retrieval-Augmented Generation).",
-      "Integrated pgvector with PostgreSQL to store and query embeddings; content is chunked, embedded, and retrieved contextually to answer natural language queries over saved notes.",
-      "Architected a monorepo with React + Tailwind frontend and Node.js + Express backend; implemented JWT auth, RESTful APIs, and Mongoose schemas.",
+      "Built a clothing storefront where shoppers can describe what they want in plain language; a Gemini-powered agent searches the catalog and prepares a checkout.",
+      "Added MongoDB stock reservations to prevent overselling, plus spending limits that send higher-value orders to a manager for approval.",
+      "Integrated Razorpay payment links and webhooks, and added an MCP server so external AI agents can search products and start guarded checkouts.",
     ],
   },
   {
