@@ -9,7 +9,8 @@ export const profile = {
   resumeUrl: "https://drive.google.com/file/d/1QF8uPh__QVgt9ZE_uorkLX4LWYhfmNif/view?usp=sharing",
   bio: [
     "I'm a Computer Science student specializing in AI & ML at VIT Bhopal. I build full-stack applications and AI/ML projects, with a focus on RAG, fine-tuning, and transformer models.",
-    "My recent projects include LoopSmith, which turns coding-session traces into reviewed instructions for coding agents; RLM-Python, an exploration of working with long documents; and Agentic Catalog, a storefront where a Gemini-powered agent searches products and prepares checkout.",
+    "For Grounded QA, I fine-tuned a language model to answer questions with sentence-level citations. I also built a verifier that checks the cited evidence and withholds an answer when the evidence is too thin.",
+    "My other projects include LoopSmith, which finds reusable instructions in coding sessions, RLM-Python for working with long documents, and Agentic Catalog, where shoppers can describe what they want and a Gemini-powered agent prepares their checkout.",
     "I'm also an AI Product Engineering Intern at FPA AI Solutions, where I work on internal AI products, model workflows, and automated evaluations. I have also helped improve website visibility through structured data and content updates."
   ],
   socials: [
