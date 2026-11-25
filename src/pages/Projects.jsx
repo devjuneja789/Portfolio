@@ -2,7 +2,7 @@ import { projects } from "../data/content";
 import Tag from "../components/Tag";
 
 function ProjectCard({ project }) {
-  const primaryUrl = project.demo || project.repo;
+  const primaryUrl = project.demo || project.repo || project.resource?.url;
 
   return (
     <article className="rounded-lg border border-[var(--border)] bg-[var(--bg-raised)] p-6">
@@ -17,6 +17,11 @@ function ProjectCard({ project }) {
           )}
         </h2>
         <div className="flex items-center gap-3 font-mono-tag text-xs">
+          {project.resource && (
+            <a href={project.resource.url} target="_blank" rel="noreferrer" className="text-[var(--accent)] hover:underline">
+              {project.resource.label} ↗
+            </a>
+          )}
           {project.demo && (
             <a
               href={project.demo}

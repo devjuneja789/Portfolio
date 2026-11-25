@@ -24,7 +24,7 @@ export const education = [
   {
     degree: "B.Tech in Computer Science and Engineering (AI & ML)",
     institution: "Vellore Institute of Technology (VIT Bhopal)",
-    cgpa: "7.75 / 10",
+    cgpa: "7.82 / 10",
     duration: "Aug 2023 - May 2027",
     status: "Pursuing",
     location: "Bhopal, MP",
@@ -53,7 +53,7 @@ export const skillGroups = [
       "Tool / Function Calling",
       "Gemini API",
       "RAG Pipelines",
-      "Fine-tuning",
+      "LoRA Fine-tuning",
       "Embeddings",
       "Transformers",
       "HuggingFace",
@@ -117,12 +117,23 @@ export const skillGroups = [
 
 export const projects = [
   {
+    name: "Grounded QA",
+    resource: { label: "Model & Evaluation", url: "https://huggingface.co/devjuneja789/grounded-qa-qwen-1p5b" },
+    stack: ["PyTorch", "PEFT", "LoRA"],
+    bullets: [
+      "Fine-tuned Qwen2.5-1.5B-Instruct with LoRA on 3,342 CLAPNQ examples to answer questions with sentence-level citations.",
+      "Built a verifier that checks each answer against its cited sentences and abstains when the evidence is insufficient.",
+      "On 600 held-out questions, failures to abstain fell from 9.0% with the base model to 3.3% with the fine-tuned model. Unnecessary refusals fell from 44.7% to 32.3%.",
+    ],
+  },
+  {
     name: "LoopSmith",
+    resource: { label: "Agensi", url: "https://www.agensi.io/skills/loopsmith" },
     repo: "https://github.com/devjuneja789/loopsmith",
     stack: ["Python", "SQLite", "Typer", "pytest", "LLM evaluation"],
     bullets: [
       "Built a Python CLI that imports coding-session traces and finds evidence-backed suggestions for reusable agent instructions.",
-      "Added static checks and optional model-based A/B evaluation; proposed changes require human approval before promotion.",
+      "Added static checks and optional A/B tests that benchmark proposed instructions against the originals. Each change requires human approval.",
       "Versioned approved instructions with rollback, and added exports for AGENTS.md, memory files, and agent skills.",
     ],
   },
